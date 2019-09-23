@@ -5,9 +5,9 @@ end
 
 def my_hash
   my_hash = {
-    1 = "dog", 
-    2 = "cat", 
-    3 = "fish"
+    1 => "dog", 
+    2 => "cat", 
+    3 => "fish"
     }
   
   # return a valid hash with any key/value pair of your choice
