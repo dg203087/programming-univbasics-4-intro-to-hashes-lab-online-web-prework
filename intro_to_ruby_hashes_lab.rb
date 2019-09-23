@@ -23,23 +23,10 @@ def id_generator
 end
 
 def my_hash_creator(key, value)
-  key = :name
   my_hash_creator = {:name => "Grace Hopper"}
-  my_hash_creator[key]
+  my_hash_creator[:name]
   # return a hash that includes the key and value parameters passed into this method
 end
-
-describe "my_hash_creator" do
-      it "accepts a key and a value as parameters and returns a hash with this key/value pair inside" do
-        expect(my_hash_creator(:name, 'Grace Hopper')).to be_a(Hash)
-        expect(my_hash_creator(:name, 'Grace Hopper')).to eq({name: 'Grace Hopper'})
-
-        expect(my_hash_creator(1, 2)).to eq({1 => 2})
-      end
-    end
-  end
-end
-
 
 
 
